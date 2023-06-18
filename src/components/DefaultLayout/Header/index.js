@@ -29,19 +29,19 @@ function Header({ className }) {
                 <nav className={cx('navbar')}>
                     <ul className={cx('navbar-menu')}>
                         <li>
-                            <Link to={'travelBlog/home'}>Home</Link>
+                            <Link to={'/home'}>Home</Link>
                         </li>
                         <li>
-                            <Link to={'travelBlog/about'}>About</Link>
+                            <Link to={'/about'}>About</Link>
                         </li>
                         <li>
-                            <Link to={'travelBlog/blogs'}>Blogs</Link>
+                            <Link to={'/blogs'}>Blogs</Link>
                         </li>
                         <li>
-                            <Link to={'travelBlog/shop'}>Shop</Link>
+                            <Link to={'/shop'}>Shop</Link>
                         </li>
                         <li>
-                            <Link to={'travelBlog/contact'}>Contact</Link>
+                            <Link to={'/contact'}>Contact</Link>
                         </li>
                     </ul>
                 </nav>
