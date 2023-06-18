@@ -11,9 +11,8 @@ import UserContext from '~/components/Hook/Context';
 
 const cx = classNames.bind(styles);
 function Header({ className }) {
-
-    const [search, setSearch] = useState()
-    const navigate = useNavigate()
+    const [search, setSearch] = useState();
+    const navigate = useNavigate();
     const [isLogin, setIsLogin] = useState(true);
     // const handleLogin = () => {
     //     setShowLogin(true);
@@ -27,45 +26,47 @@ function Header({ className }) {
     return (
         <div className={cx('wrapper', className)}>
             <header className={cx('header')}>
-                <nav className={cx("navbar")}>
+                <nav className={cx('navbar')}>
                     <ul className={cx('navbar-menu')}>
                         <li>
-                            <Link to={'/home'}>Home</Link>
+                            <Link to={'travelBlog/home'}>Home</Link>
                         </li>
                         <li>
-                            <Link to={'/about'}>About</Link>
+                            <Link to={'travelBlog/about'}>About</Link>
                         </li>
                         <li>
-                            <Link to={'/blogs'}>Blogs</Link>
+                            <Link to={'travelBlog/blogs'}>Blogs</Link>
                         </li>
                         <li>
-                            <Link to={'/shop'}>Shop</Link>
+                            <Link to={'travelBlog/shop'}>Shop</Link>
                         </li>
                         <li>
-                            <Link to={'/contact'}>Contact</Link>
+                            <Link to={'travelBlog/contact'}>Contact</Link>
                         </li>
                     </ul>
                 </nav>
 
                 <div className={cx('user-action')}>
-                    
-                   <div className={cx('search')}>
-                   <input  
-                        className={cx('input-search')}
-                        type='text' placeholder='search'
-                        onChange={(e) => setSearch(e.target.value)}
-                    />
+                    <div className={cx('search')}>
+                        <input
+                            className={cx('input-search')}
+                            type="text"
+                            placeholder="search"
+                            onChange={(e) => setSearch(e.target.value)}
+                        />
 
-                    <FontAwesomeIcon
-                        className={cx('icon-search')}
-                        icon={faMagnifyingGlass}
-                        onClick={()=>{
-                            let link = (search) ? `/search/${search}` : `/search`;
-                            navigate(link)
-                        }}
-                    ></FontAwesomeIcon>
-                   </div>
-            
+                        <FontAwesomeIcon
+                            className={cx('icon-search')}
+                            icon={faMagnifyingGlass}
+                            onClick={() => {
+                                let link = search
+                                    ? `/search/${search}`
+                                    : `/search`;
+                                navigate(link);
+                            }}
+                        ></FontAwesomeIcon>
+                    </div>
+
                     <Button btnLogin small onClick={handleStateLogin}>
                         Login
                     </Button>
