@@ -1,0 +1,36 @@
+.wrapper {
+    position: relative;
+}
+.layout-default {
+    position: relative;
+    flex-direction: column;
+
+}
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.login {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.info{
+    background-color: #174747;
+    height: 68px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site{
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}

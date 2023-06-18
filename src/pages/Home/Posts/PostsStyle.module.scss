@@ -1,0 +1,88 @@
+
+.post-wrapper{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 50px;
+}
+.post-inner{
+    margin: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    color: rgb(51, 51, 51);
+}
+.post-img{
+    width: 40vw;
+    height: 600px;
+    aspect-ratio: auto 1600 / 1200;
+}
+
+.post-inner-content {
+    /* width: 40%; */
+    margin: 0 50px;
+}
+.post-content{
+    background-color: rgb(255,255,255);
+    padding: 20px;
+}
+
+.btn-read-more-post{
+    background-color: rgb(22, 73, 73);
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 9px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 18px;
+    text-align: center;
+    padding: 10px 15px;
+}
+.btn-read-more-post:hover{
+    background-color: white;
+    border: 1px solid black;
+    color: #f2dace;
+}
+
+.view-post:hover{
+    background-color: #164949;
+    font-size: 10px;
+}
+.post-title{
+    color: rgb(51, 51, 51);
+    font-family: YesevaOne,sans-serif, serif;
+    cursor: pointer;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 900px;
+    letter-spacing: 1px;
+    line-height: 42px;
+    text-align: center;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    position: relative;
+    top: 30px;
+    
+}
+.post-title:hover{
+    color: #f2dace;
+}
+.post-date{
+    font-family: sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+@font-face {
+    font-family: YesevaOne;
+    src: url(../../../assets/YesevaOne-Regular.ttf);
+}
+.spacing{
+    height: 30px;
+}

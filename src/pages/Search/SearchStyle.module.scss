@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #f9f4f2;
+    color: rgb(51,51,51);
+}
+
+.blog {
+    flex-grow: 1;
+    margin: 0 50px;
+
+    
+}
+
+.sidebar {
+    margin-top: 40px;
+    padding-right: 50px;
+    .widget-wrap-1 {
+        margin-bottom: 20px;
+        padding: 20px;
+        background: #fff;
+        border: none;
+        text-align: center;
+        word-wrap: break-word;
+        img {
+            height: auto;
+            max-width: 100%;
+        }
+        a {
+            text-decoration: none;
+            font-weight: 500;
+            padding: 12px 70px;
+            background-color: #164949;
+            border: 1px solid #164949;
+            box-shadow: none;
+            color: #fff;
+            cursor: pointer;
+            font-family: 'brandon-grotesque', sans-serif;
+            font-size: 12px;
+        }
+        a:hover {
+            color: #164949;
+            background-color: #fff;
+        }
+    }
+    .widget-wrap-2 {
+        background: #f3dace !important;
+        padding: 20px;
+        text-align: center;
+        h4 {
+            margin-bottom: 0;
+            font-size: 16px;
+            font-weight: 400;
+            font-family: 'brandon-grotesque';
+            padding: 0 0 7px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        p {
+            font-family: 'Holland';
+            color: #164948;
+            font-size: 30px;
+            margin-bottom: 16px;
+        }
+        form {
+            input {
+                background-color: #fff;
+                color: #888;
+                font-size: 10px;
+                margin-bottom: 16px;
+                text-transform: uppercase;
+                border: 1px solid #e8e8e8;
+                padding: 12px;
+                width: 100%;
+            }
+            input[type='submit']:hover {
+                background-color: transparent;
+                border: 1px solid #fff;
+            }
+        }
+    }
+}
+
+@font-face {
+    font-family: YesevaOne;
+    src: url(../../assets/YesevaOne-Regular.ttf);
+}
+.tilte-result{
+    font-family: YesevaOne, sans-serif, serif;
+    font-size: 20px;
+    font-weight: 300px;
+    letter-spacing: 1px;
+    line-height: 46px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0px;
+}

@@ -1,0 +1,14 @@
+.wrapper-not-found{
+    width: 100%;
+    min-height: 628px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title-not-found{
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 60px;
+}
