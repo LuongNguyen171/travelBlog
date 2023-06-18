@@ -29,7 +29,7 @@ function Header({ className }) {
                 <nav className={cx('navbar')}>
                     <ul className={cx('navbar-menu')}>
                         <li>
-                            <Link to={'/home'}>Home</Link>
+                            <Link to={'/'}>Home</Link>
                         </li>
                         <li>
                             <Link to={'/about'}>About</Link>
